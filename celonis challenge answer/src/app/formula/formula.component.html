@@ -1,0 +1,23 @@
+<form #formFormula="ngForm">
+  <p>
+    <textarea
+      style="margin-top: 1rem;padding:0.5rem"
+      cols="100"
+      rows="8"
+      [(ngModel)]="formula"
+      name="formula"
+      required
+    ></textarea
+    ><br />
+  </p>
+  <p>
+    <button
+      style="margin:0.5rem;padding:0.5rem"
+      class="btn btn-primary"
+      (click)="updateAstView()"
+      [disabled]="!formFormula.valid"
+    >
+      Parse and update Visualizer View
+    </button>
+  </p>
+</form>

@@ -1,0 +1,80 @@
+@import url('https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.inValid {
+  border: 2.5px solid red;
+}
+.opdropdown {
+  background-color: white;
+}
+select.selectdropdown {
+  font-weight: bold;
+  padding: 2px;
+  border: 1px solid black;
+  outline: 0;
+  border-radius: 0.7rem;
+}
+
+.tree {
+  overflow: auto;
+  background: #eeeeee;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.tree-add-button {
+  bottom: 7px;
+  left: 5px;
+  width: 12px;
+  height: 12px;
+  cursor: pointer;
+}
+
+.tree-del-button {
+  width: 12px;
+  height: 12px;
+  bottom: 7px;
+  right: 5px;
+  cursor: pointer;
+}
+
+.tree-add-button,
+.tree-del-button {
+  position: absolute;
+  font-size: 12px;
+}
+
+h2 {
+  margin: 0px;
+  font-size: 13px;
+  font-weight: normal;
+  min-height: 20px;
+  white-space: normal;
+}
+
+.node {
+  cursor: default;
+  border: 1px solid #e7e7e7;
+  display: inline-block;
+  margin: 1rem;
+  padding: 5px;
+  background: linear-gradient(to bottom, #ffffff 0%, #fbfbfb 100%);
+  line-height: 1.3em;
+  position: relative;
+  box-shadow: 1px 1px 1px 1px #ddd;
+}
+
+.tree-add-button:hover,
+.tree-del-button:hover {
+  cursor: pointer;
+}
+
+.formula {
+  margin: 1rem;
+  font-size: xx-large;
+  padding: 0.5rem;
+  background-color: #ccffcc;
+  width: fit-content;
+}
